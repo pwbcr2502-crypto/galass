@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>移动端修复测试</title>
+</head>
+<body>
+    <h1>移动端修复测试</h1>
+    <p>请在浏览器中访问以下链接测试：</p>
+    <ul>
+        <li><a href="http://localhost:8080" target="_blank">移动端首页</a></li>
+        <li><a href="http://localhost:8080/login" target="_blank">移动端登录页</a></li>
+    </ul>
+    
+    <h2>测试说明：</h2>
+    <ol>
+        <li>点击上面的链接打开移动端</li>
+        <li>检查是否还有 "Router error" 或 "Ke.fail is not a function" 错误</li>
+        <li>尝试进入登录页面</li>
+        <li>测试输入工号：E004，活动码：PWB111</li>
+    </ol>
+    
+    <h3>修复内容：</h3>
+    <ul>
+        <li>✅ 修复了 Toast 组件的导入和使用问题</li>
+        <li>✅ 使用正确的 showToast 函数替代 Toast.fail</li>
+        <li>✅ 消除了循环依赖问题</li>
+        <li>✅ 重新构建了移动端镜像</li>
+    </ul>
+</body>
+</html>

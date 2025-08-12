@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#ff6b6b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>年会投票系统</title>
+    
+    <!-- 动态设置根字体大小适配不同屏幕 -->
+    <script>
+      (function() {
+        const setRootFontSize = () => {
+          const width = Math.min(document.documentElement.clientWidth, 750)
+          const fontSize = Math.max(20, Math.min(32, (width / 375) * 24))
+          document.documentElement.style.fontSize = fontSize + 'px'
+        }
+        setRootFontSize()
+        window.addEventListener('resize', setRootFontSize)
+        window.addEventListener('orientationchange', setRootFontSize)
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.simple.js"></script>
+  </body>
+</html>
